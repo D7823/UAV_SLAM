@@ -74,12 +74,9 @@ void stereo_tracking(const std::shared_ptr<openvslam::config>& cfg,
                 continue;
             }
             /////////////////////////////
-            //might delete the resize part
-            for (int i = 0; i < 2; i++) {
-                if (scale != 1.0) {
-                    cv::resize(frames[i], frames[i], cv::Size(), scale, scale, cv::INTER_LINEAR);
-                }
-            }
+            //might need to resize the frame
+            //cv::resize(frames[i], frames[i], cv::Size(), scale, scale, cv::INTER_LINEAR);
+          
             rectifier.rectify(frames[0], frames[1], frames_rectified[0], frames_rectified[1]);
 
             const auto tp_1 = std::chrono::steady_clock::now();
