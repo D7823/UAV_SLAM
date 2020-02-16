@@ -52,6 +52,7 @@ void stereo_tracking(const std::shared_ptr<openvslam::config>& cfg,
     const openvslam::util::stereo_rectifier rectifier(cfg);
     cv::Mat bigFrame;
     //the big frame with left and right image
+    cv::Rect leftROI, rightROI;
     cv::Mat frames[2];
     cv::Mat frames_rectified[2];
     double timestamp = 0.0;
@@ -67,7 +68,15 @@ void stereo_tracking(const std::shared_ptr<openvslam::config>& cfg,
             
             ////////////////////////////////////////////////////
             //crop the bigFrame to 2 frames here
-            //
+            leftROI.y = rightROI.y = 0;
+            leftROI.width = rightROI.width = bigFrame.cols / 2;
+            leftROI.height = rightROI.height = bigFrame.rows;
+            leftROI.x = 0;
+            rightROI.x = bigFrame.cols / 2;
+
+            // Crop images.
+            frames[0] = cv::Mat(bigFrame, leftROI);
+            frames[1] = cv::Mat(bigFrame, rightROI);
             ////////////////////////////////////////////////////
             
             if (frames[0].empty() || frames[1].empty()) {
