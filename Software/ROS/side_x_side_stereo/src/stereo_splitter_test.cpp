@@ -1,6 +1,5 @@
 
 // (MIT License)
-//
 // Copyright 2019 David B. Curtis
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
