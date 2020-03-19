@@ -1,3 +1,7 @@
+Left part is the command should run on the terminal, right part is some notes might be helpful
+
+
+
 roscore
 roslaunch video_stream_opencv test_stereopi.launch      note: configure the right rtsp link
 rosrun side_x_side_stereo side_x_side_stereo_node
