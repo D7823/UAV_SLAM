@@ -1,0 +1,6 @@
+roscore
+roslaunch video_stream_opencv test_stereopi.launch      note: configure the right rtsp link
+rosrun side_x_side_stereo side_x_side_stereo_node
+rostopic                                                 note: check the left and right image_raw
+rosrun camera_calibration cameracalibrator.py --approximate 0.5 --size 8x6 --square 0.000625 right:=/right/image_raw left:=/left/image_raw
+rosrun rqt_graph rqt_graph
