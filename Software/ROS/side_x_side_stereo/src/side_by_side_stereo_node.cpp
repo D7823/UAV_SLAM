@@ -29,8 +29,7 @@
 //
 // This is a modified version of public domain code posted by PeteBlackerThe3rd
 // in response to my question on ROS Answers:
-// https://answers.ros.org/question/315298/splitting-side-by-side-video-into-stereoleft-stereoright/
-//
+// https://answers.ros.org/question/315298/splitting-side-by-side-video-into-stereoleft-stereoright
 // -- dbc
 
 #include <ros/ros.h>
