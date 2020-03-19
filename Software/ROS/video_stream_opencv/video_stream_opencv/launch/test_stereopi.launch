@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<launch>
+   <!-- launch video stream -->
+   <include file="$(find video_stream_opencv)/launch/camera.launch" >
+   		<!-- node name and ros graph name -->
+	  	<arg name="camera_name" value="rtsp" />
+	  	<!-- url of the video stream -->
+	  	<arg name="video_stream_provider" value="rtsp://158.121.50.137:554/h264" />
+	  	<!-- set camera fps to -->
+	  	<!--arg name="set_camera_fps" value="10"/-->
+      	<!-- set buffer queue size of frame capturing to -->
+      	<arg name="buffer_queue_size" value="1" />
+	  	<!-- throttling the querying of frames to -->
+	  	<arg name="fps" value="10" />
+	  	<!-- setting frame_id -->
+	  	<arg name="frame_id" value="rtsp" />
+	  	<!-- camera info loading, take care as it needs the "file:///" at the start , e.g.:-->
+	  	<arg name="camera_info_url" value="file:///$(find video_stream_opencv)/config/test_pi_calibration.yaml"/>
+	  	<!-- visualize on an image_view window the stream generated -->
+	  	<arg name="visualize" value="false" />
+   </include>
+</launch>
