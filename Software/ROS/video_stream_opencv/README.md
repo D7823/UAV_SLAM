@@ -23,11 +23,11 @@ roslaunch video_stream_opencv video_file.launch
 
 Copy the launch files in this folder to the launch folder of the video_stream_opencv folder
 
-  video_monopi.launch: launch file for the video captured by stereoPi in 2D mode -- mono_Pi.mp4
+* video_monopi.launch: launch file for the video captured by stereoPi in 2D mode -- mono_Pi.mp4
 
-  video_stereo.launch: launch file for the video captured by stereoPi in 3D mode -- stereo_Pi.mp4
+* video_stereo.launch: launch file for the video captured by stereoPi in 3D mode -- stereo_Pi.mp4
 
-  stereopi_rtsp.launch: launch file for streaming video from stereoPi in 3D mode though network rtsp protocol
+* stereopi_rtsp.launch: launch file for streaming video from stereoPi in 3D mode though network rtsp protocol
 
   (Modify the rtsp address if static IP address is different or using a dynamic IP address with the router, more about how to
     configure static IP address for stereoPi in the following section.)
