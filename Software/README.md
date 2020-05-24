@@ -15,4 +15,4 @@ http://wiki.ros.org/kinetic/Installation/Ubuntu
 For ubuntu 18.04, use ros-melodic:
 http://wiki.ros.org/melodic/Installation/Ubuntu
 
-Tutorials for ROS can be found in: http://wiki.ros.org/ROS/Tutorials
+Follow the installing instructions and test the environment after installing. Tutorials for ROS can be found in: http://wiki.ros.org/ROS/Tutorials
