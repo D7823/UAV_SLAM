@@ -1,1 +1,19 @@
+Software for the whole system
+=====================================
 
+ROS folder contains the ros files for the project, including ros nodes, driver scripts and some launch files for using third-party
+ROS software, such as orb-slam2 ros package and darknet package.
+
+Other folders contain the programs running on the target hardware. For example, the programs under BLE_Deck folder should be
+built and then ran on the BLE Deck or other NRF52832-based board. The details can be found in the README file of each individual
+folder.
+
+The installing of ROS
+=====================================
+For ubuntu 16.04, use ros-kinetic:
+http://wiki.ros.org/kinetic/Installation/Ubuntu
+
+For ubuntu 18.04, use ros-melodic:
+http://wiki.ros.org/melodic/Installation/Ubuntu
+
+Tutorials for ROS can be found in: http://wiki.ros.org/ROS/Tutorials
