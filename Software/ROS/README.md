@@ -14,3 +14,5 @@ side_x_side_stereo: A ROS node for cutting the raw frame into left/right frame a
 orb-slam2: node for orb-slam2 system
 
 darket: node for running the yolo object detection
+
+Go to each folder and build each nodes. Recommand order: video_stream_opencv->side_x_side_stereo->camera_calibration->orb_slam2->darknet->other script-based nodes
