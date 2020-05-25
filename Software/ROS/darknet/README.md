@@ -8,7 +8,12 @@ We use this yolo implementation to do object detection: https://github.com/legge
 
 3. Testing. 
 
-- Find a image and then use image_publisher to publish it in the ROS
-- use rostopic to find the published image name
-- replace the image name in the yolo_v3.launch to the published image name you found
-- roslaunch darknet_ros yolo_v3.launch
+a. Find a image and then use image_publisher to publish it in the ROS
+
+b. use rostopic to find the published image name
+
+c. replace the image name in the yolo_v3.launch to the published image name you found
+
+d. roslaunch darknet_ros yolo_v3.launch
+
+You might also use the disparity.launch file in the side_x_side_stereo project to extract left frame from videos for object detection. 
