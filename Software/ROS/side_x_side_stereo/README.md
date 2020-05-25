@@ -18,7 +18,7 @@ launch: launch files to run the whole system
 Note: the launch files has to be modified before running (check the comment inside the files) 
 
 ## Build
-1. Copy all the whole folder to your catkin workspace
+1. Copy the whole folder to your catkin workspace
 
 2. run
 ```
