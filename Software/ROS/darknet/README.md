@@ -4,7 +4,7 @@ We use this yolo implementation to do object detection: https://github.com/legge
 
 1. Follow the building instructions in the above website to build the darknet node in your catkin space
 
-2. Copy the launch file to darknet_ros/launch folder. It takes the rectified left image for object detection. Just use roslaunch to run it when you are running the stereo version orb-SLAM2.
+2. Copy the launch file to darknet_ros/launch folder. It takes the rectified left image for object detection. Just use roslaunch to run it when you are running the stereo version ORB-SLAM2.
 
 3. Testing. 
 
