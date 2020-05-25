@@ -1,5 +1,5 @@
 # StereoPi Driver
-This node is to build the stereoPi driver
+This node is to build the stereoPi driver based on the package: https://github.com/ros-drivers/video_stream_opencv
 
 ### 1. Install video_stream_opencv ros package 
 
