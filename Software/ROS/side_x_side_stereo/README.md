@@ -7,11 +7,13 @@ Since the stereoPi driver gives one large frame as output, we use this node to s
 Intro to the files:
 
 src: source codes of the node
+
      * backup.cpp: original code from the author
      * side_by_side_stereo_node.cpp: code for splitting images
      * stereo_splitter_rectifier.cpp: code for splitting images and publishing camera information (Mostly used in our system)
 
 launch: launch files to run the whole system
+
      * disparity.launch: launch file for running stereoPi driver, splitter/rectifier node, stereo_image_proc node
      * whole.launch: launch file for running stereoPi driver, solitter/rectifier node, stereo_image_proc node, orbslam2 node
 
