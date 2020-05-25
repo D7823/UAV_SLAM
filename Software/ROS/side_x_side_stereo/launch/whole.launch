@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="stereo_SR_node" pkg="side_x_side_stereo" type="stereo_SR_node" />
+  <!--node name="image_proc" pkg="image_proc" type="image_proc" ns="stereopi/left"/-->
+  <!--node name="image_proc" pkg="image_proc" type="image_proc" ns="stereopi/right"/-->
+  <node name="stereo_image_proc" pkg="stereo_image_proc" type="stereo_image_proc" ns="stereopi"/>
+  <!--change the file path and file if necessary, to do: use relative path-->
+  <include file="/home/duncan/catkin_ws/src/video_stream_opencv/launch/stereopi_rtsp.launch"/>
+  <include file="/home/duncan/catkin_ws/src/orb_slam_2_ros/ros/launch/orb_slam2_pi_stereo.launch" />
+</launch>

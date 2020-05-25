@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="stereo_SR_node" pkg="side_x_side_stereo" type="stereo_SR_node" />
+   <!--launch stereo image process node-->
+   <node name="stereo_image_proc" pkg="stereo_image_proc" type="stereo_image_proc" ns="stereopi"/>
+   <!--change the file path and launch file accordingly-->
+  <include file="/home/duncan/catkin_ws/src/video_stream_opencv/launch/video_stereo.launch" />
+</launch>
