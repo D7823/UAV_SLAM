@@ -32,10 +32,10 @@ Parameters:
 
 2. 
 
-    a. Hold the chessboard in front of the stereopi and move it around till it collects enough frames for calibration. 
-    b. Click the calibration button
-    c. Wait for calibration finish and keep holding the chessboard, check the epi value if lower than 0.25 then the carlibration is okay
-    d. save the calibration result and generate the yaml file for slam or other tasks following their file format
+    1. Hold the chessboard in front of the stereopi and move it around till it collects enough frames for calibration. 
+    2. Click the calibration button
+    3. Wait for calibration finish and keep holding the chessboard, check the epi value if lower than 0.25 then the carlibration is okay
+    4. save the calibration result and generate the yaml file for slam or other tasks following their file format
 
 
 
