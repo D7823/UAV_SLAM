@@ -5,7 +5,7 @@ Above ROS packages are used for the ROS software development, including orginal 
 * video_stream_opencv: video/streaming driver for the stereoPi
 * camera_calibration: camera calibration for the stereoPi. This is should be done before performing SLAM task and generating 
                     disparity map
-* side_x_side_stereo: A ROS node for cutting the raw frame into left/right frame and publish lef/right camera information.
+* side_x_side_stereo(the image preprocessor stated in the paper): A ROS node for cutting the raw frame into left/right frame and publish lef/right camera information.
                     It also includes the launch file to run the whole system.
 * orb-slam2: node for orb-slam2 system
 * darket: node for running the yolo object detection
