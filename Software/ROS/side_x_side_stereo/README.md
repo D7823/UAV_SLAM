@@ -30,7 +30,7 @@ in your catkin workspace
 
 3. check/run after sourcing the setup.sh file
 ```
-rosrun side_x_side_stereo_SR_node
+rosrun side_x_side_stereo stereo_SR_node
 ```
 use rostopic to check whether there are published topics specified in the parameters section
 ```
