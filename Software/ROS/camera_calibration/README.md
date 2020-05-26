@@ -11,6 +11,8 @@ sudo apt-get install ros-kinetic(or melodic)-camera-calibration
 
 And follow [this tutorial](http://wiki.ros.org/camera_calibration/Tutorials/StereoCalibration) to finish the calibration process.
 
+The yaml file is the one we used before. Better to generate you own to avoid potential issue I might have made in the process.
+
 #### Process
 Here is the camera calibration process with the camera calibration ros node and the stereoPi driver
 
