@@ -14,4 +14,4 @@ They can be placed into any ROS project and use rosrun to run as individual node
 
 #### PMIC ROS driver
 
-### LoRa module ROS driver
+#### LoRa module ROS driver
