@@ -23,15 +23,14 @@ roslaunch video_stream_opencv stereopi_rtsp.launch
 rosrun side_x_side_stereo side_x_side_stereo_node
 rosrun camera_calibration cameracalibrator.py --approximate 0.5 --size 8x6 --square 0.108 right:=/stereopi/right/image_raw left:=/stereopi/left/image_raw
 ```
-You should see the interface of the camera_calibration node with the real-time streaming.
+You should see the interface of the camera_calibration node with the real-time streaming, otherwise use rostopic to check the topics
 
 Parameters:
 * approximate: the time of streaming latency in seconds
 * size: the internal corner count of the chessboard
 * square: the length of the square in meters
 
-2. 
-
+2. Following:
     1. Hold the chessboard in front of the stereopi and move it around till it collects enough frames for calibration. 
     2. Click the calibration button
     3. Wait for calibration finish and keep holding the chessboard, check the epi value if lower than 0.25 then the carlibration is okay
