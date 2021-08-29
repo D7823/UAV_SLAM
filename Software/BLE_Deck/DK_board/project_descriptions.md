@@ -9,7 +9,11 @@ Drone2(tested): Implement the nrf52 as both central and peripheral as drone1. As
 Note: Drone1/2 needs further development, including receiving all 5 beacons data, creating I2C services, sending data with certain formatting according to the crazyflie’s command,
       which is integrating all the above functionality in those projects into a single one project(all in one below)
 
-Ble(tested, used in experiment to collect one beacon’s rssi value): receive one beacon’s rssi
+All_in_one: developed upon Drone1/2, functionality as described in the above note.
+
+All_in_one_1/2/3(tested): instance of All_in_one, drone 1 as the central sends data to drone 2 peripheral, drone2 central relays data to drone 1 peripheral.  
+
+BLE(tested, used in experiment to collect one beacon’s rssi value): receive one beacon’s rssi
 
 Double beacon(tested): receive two beacons’ rssi
 
